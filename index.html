@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Optimization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Upload and Optimize Image</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <input type="number" id="quality" min="0" max="1" step="0.2">
+    <button id="compressButton">Compress Image</button>
+    <img id="preview" src="" alt="Image preview" style="display:none;">
+    <a href="#" id="downloadButton" style="display:none;">Download Compressed Image</a>
+
+    <div class="main">
+      
+        <p class="before-text">Before Image: </p>
+        <div class="top-image">
+        </div>
+        <p class="after-text">After Image: </p>
+        <div class="back-image">
+
+            <div class="circle">
+                <svg viewBox="0 0 27 20">
+                    <path class="_arrow-left_mdt25_58" d="M9.6 0L0 9.6l9.6 9.6z"></path>
+                    <path class="_arrow-right_mdt25_62" d="M17 19.2l9.5-9.6L16.9 0z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/image-compressor.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
